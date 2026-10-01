@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>智理书签 SmartMark · 隐私政策</title>
+<style>
+  body { max-width: 760px; margin: 0 auto; padding: 32px 20px; font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; color: #1f2937; line-height: 1.8; }
+  h1 { font-size: 24px; border-bottom: 2px solid #2563eb; padding-bottom: 12px; }
+  h2 { font-size: 18px; margin-top: 28px; color: #111827; }
+  p, li { font-size: 14.5px; color: #374151; }
+  .meta { color: #6b7280; font-size: 13px; }
+  code { background: #f3f4f6; padding: 1px 6px; border-radius: 4px; font-size: 13px; }
+</style>
+</head>
+<body>
+<h1>智理书签 SmartMark · 隐私政策</h1>
+<p class="meta">生效日期：2026 年 10 月 1 日 ｜ 版本 v1.3.9</p>
+
+<h2>一、核心承诺</h2>
+<p>智理书签是一款<strong>本地优先</strong>的书签整理工具。你的书签数据默认只在你的浏览器本地处理，
+我们<strong>不收集、不上传、不出售</strong>你的任何个人数据，不含广告，不含追踪代码。</p>
+
+<h2>二、我们处理的数据</h2>
+<ul>
+  <li><strong>书签数据</strong>（标题、链接、文件夹结构）：仅在本地读取与整理，用于分类、去重、备份、失效检测。备份文件保存在你的浏览器本地存储（<code>chrome.storage.local</code>）中。</li>
+  <li><strong>AI 配置</strong>（接口地址、模型名、API Key）：仅保存在你的浏览器本地，用于调用你指定的 AI 接口做智能分类。我们<strong>看不到</strong>你的 Key。</li>
+  <li><strong>自定义规则与分类体系</strong>：仅保存在本地。</li>
+</ul>
+
+<h2>三、AI 接口调用时的数据去向</h2>
+<p>当你启用 AI 分类功能并配置了 AI 接口后，扩展会将<strong>书签标题和链接</strong>发送到<strong>你自己配置的</strong> AI
+服务接口（如本地 llama-server、Agnes、DeepSeek、OpenAI 或你指定的自定义接口），用于返回分类建议。
+除此之外的书签内容不会被发送，发送的数据受你所选 AI 服务商的隐私政策约束。</p>
+<p>如果你只使用内置规则引擎（离线模式），则<strong>没有任何数据离开你的浏览器</strong>。</p>
+
+<h2>四、权限说明</h2>
+<ul>
+  <li><code>bookmarks</code>：读取与整理你的书签（核心功能）。</li>
+  <li><code>storage</code>：在本地保存设置、备份与规则。</li>
+  <li><code>activeTab</code>：新书签自动归类时读取当前标签页标题（可选功能）。</li>
+  <li><code>host_permissions</code>：仅用于连接<strong>你配置的</strong> AI 接口地址。</li>
+</ul>
+
+<h2>五、我们不做的事</h2>
+<ul>
+  <li>不收集设备标识、浏览历史、个人身份信息。</li>
+  <li>不使用任何第三方统计、广告或追踪 SDK。</li>
+  <li>不将你的数据用于 AI 模型训练。</li>
+  <li>不与任何第三方共享你的数据（你主动配置的 AI 接口除外）。</li>
+</ul>
+
+<h2>六、数据安全</h2>
+<p>所有数据保存在你的浏览器本地存储中，与你的浏览器账号体系共存。卸载扩展会清除本地数据（请提前用"设置 → 导出"备份）。</p>
+
+<h2>七、儿童隐私</h2>
+<p>本扩展不针对 13 岁以下儿童，不会有意收集儿童信息。</p>
+
+<h2>八、政策更新</h2>
+<p>隐私政策更新时会在扩展更新日志中说明，重大变更会通过扩展内通知告知。</p>
+
+<h2>九、联系我们</h2>
+<p>如有隐私相关问题，请通过 Chrome Web Store 扩展页面的"支持"链接联系我们。</p>
+</body>
+</html>

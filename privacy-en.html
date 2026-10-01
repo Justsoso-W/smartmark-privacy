@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SmartMark · Privacy Policy</title>
+<style>
+  body { max-width: 760px; margin: 0 auto; padding: 32px 20px; font-family: -apple-system, "Segoe UI", sans-serif; color: #1f2937; line-height: 1.8; }
+  h1 { font-size: 24px; border-bottom: 2px solid #2563eb; padding-bottom: 12px; }
+  h2 { font-size: 18px; margin-top: 28px; color: #111827; }
+  p, li { font-size: 14.5px; color: #374151; }
+  .meta { color: #6b7280; font-size: 13px; }
+  code { background: #f3f4f6; padding: 1px 6px; border-radius: 4px; font-size: 13px; }
+</style>
+</head>
+<body>
+<h1>SmartMark · Privacy Policy</h1>
+<p class="meta">Effective: October 1, 2026 ｜ Version v1.3.9</p>
+
+<h2>1. Our commitment</h2>
+<p>SmartMark is a <strong>local-first</strong> bookmark organizer. Your bookmark data is processed
+in your browser by default. We <strong>do not collect, upload, or sell</strong> any of your
+personal data. No ads, no tracking code.</p>
+
+<h2>2. Data we process</h2>
+<ul>
+  <li><strong>Bookmark data</strong> (titles, URLs, folder structure): read and organized locally
+  for classification, deduplication, backup, and dead-link detection. Backups are stored in your
+  browser's local storage (<code>chrome.storage.local</code>).</li>
+  <li><strong>AI configuration</strong> (endpoint, model name, API key): stored only in your
+  browser, used solely to call the AI service <strong>you</strong> configured. We cannot see your key.</li>
+  <li><strong>Custom rules and categories</strong>: stored locally only.</li>
+</ul>
+
+<h2>3. Where data goes when AI is enabled</h2>
+<p>When you enable AI classification with your own configured endpoint, the extension sends
+<strong>bookmark titles and URLs</strong> to that endpoint (e.g., local llama-server, Agnes,
+DeepSeek, OpenAI, or your custom endpoint) to receive classification suggestions. Data sent is
+governed by your chosen provider's privacy policy.</p>
+<p>If you use only the built-in rules engine (offline mode), <strong>no data leaves your browser</strong>.</p>
+
+<h2>4. Permissions</h2>
+<ul>
+  <li><code>bookmarks</code>: read and organize your bookmarks (core feature).</li>
+  <li><code>storage</code>: store settings, backups, and rules locally.</li>
+  <li><code>activeTab</code>: read the current tab title for auto-categorization of new bookmarks (optional).</li>
+  <li><code>host_permissions</code>: connect only to the AI endpoint <strong>you</strong> configured.</li>
+</ul>
+
+<h2>5. What we never do</h2>
+<ul>
+  <li>No collection of device identifiers, browsing history, or personal identity.</li>
+  <li>No third-party analytics, advertising, or tracking SDKs.</li>
+  <li>Your data is never used for AI model training.</li>
+  <li>No sharing with third parties (except the AI endpoint you configured yourself).</li>
+</ul>
+
+<h2>6. Data security</h2>
+<p>All data lives in your browser's local storage. Uninstalling the extension clears local data
+(please use Settings → Export to back up first).</p>
+
+<h2>7. Children's privacy</h2>
+<p>This extension is not directed at children under 13 and does not knowingly collect their information.</p>
+
+<h2>8. Changes</h2>
+<p>Policy updates will be noted in the extension changelog; material changes will be announced in-extension.</p>
+
+<h2>9. Contact</h2>
+<p>For privacy questions, contact us via the Support link on the Chrome Web Store listing.</p>
+</body>
+</html>
